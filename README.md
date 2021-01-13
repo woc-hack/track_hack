@@ -25,6 +25,9 @@ Command for getting required data from WoC
 `$ cat b2c.csv | cut -d\; -f2 | sort -u -T. > CsAll`
 `$ cat CsAll | ~/lookup/getValues -f c2P > c2P.csv`
 
+### Get Commit to Timestamp/Author map (c2ta):
+`$ cat CsAll | ~/lookup/getValues c2ta | awk -F\; '{OFS=";"; $2=strftime("%Y-%m-%d %H:%M:%S", $2); print $0}' > c2ta.csv`
+
 ## [Analysis for identifying when and by whom the code was created (RQ1)](./TrackCodeGeneration.ipynb)
 ## [Analysis for tracking hackathon code reuse (RQ2)](./TrackCodeUsage.ipynb)
 ## [Analysis for identifying factors that affect code reuse (RQ3)](./Influence_factors.ipynb)
