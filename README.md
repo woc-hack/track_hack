@@ -1,6 +1,9 @@
-# track_hack
+# Tracking Hackathon Code Usage
+Replication Package for "The Secret Life of Hackathon Code Where does it come from and where does it go?"
 
 # Data Processing Steps Listed below using [WoC](https://github.com/woc-hack/tutorial):
+
+Command for getting required data from WoC
 
 ###  Get Project to Commit maps (p2c):
 `$ cat hack_projects | ~/lookup/getValues -f p2c > p2c.csv`
@@ -14,3 +17,10 @@
 
 ###  Get Project to author maps (p2a):
 `$ cat hack_projects | ~/lookup/getValues p2a | sed -e 's/;/,/g' -e 's/,/;/1' > p2a.csv`
+
+
+## [Analysis for identifying when and by whom the code was created (RQ1)](./TrackCodeGeneration.ipynb)
+## [Analysis for tracking hackathon code reuse (RQ2)](./TrackCodeUsage.ipynb)
+## [Analysis for identifying factors that affect code reuse (RQ3)](./Influence_factors.ipynb)
+
+## [Classifying projects and plot generation](./Project_classification_code_flow.ipynb)
