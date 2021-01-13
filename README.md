@@ -21,3 +21,6 @@ Command for getting required data from WoC
 
 ## [Analysis for identifying when and by whom the code was created (RQ1)](./TrackCodeGeneration.ipynb)
 ## [Analysis for tracking hackathon code reuse (RQ2)](./TrackCodeUsage.ipynb)
+## [Analysis for identifying factors that affect code reuse (RQ3)](./Influence_factors.ipynb)
+
+## [Classifying projects and plot generation](./Project_classification_code_flow.ipynb)
