@@ -18,6 +18,12 @@ Command for getting required data from WoC
 ###  Get Project to author maps (p2a):
 `$ cat hack_projects | ~/lookup/getValues p2a | sed -e 's/;/,/g' -e 's/,/;/1' > p2a.csv`
 
+### Get Blobs to commit maps (b2c):
+`$ cat Bs | ~/lookup/getValues -f b2c > b2c.csv`
+
+### Get Commit to Project map (c2P):
+`$ cat b2c.csv | cut -d\; -f2 | sort -u -T. > CsAll`
+`$ cat CsAll | ~/lookup/getValues -f c2P > c2P.csv`
 
 ## [Analysis for identifying when and by whom the code was created (RQ1)](./TrackCodeGeneration.ipynb)
 ## [Analysis for tracking hackathon code reuse (RQ2)](./TrackCodeUsage.ipynb)
