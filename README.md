@@ -33,3 +33,5 @@ Command for getting required data from WoC
 ## [Analysis for identifying factors that affect code reuse (RQ3)](./Influence_factors.ipynb)
 
 ## [Classifying projects and plot generation](./Project_classification_code_flow.ipynb)
+## [Survey Data Collection](./SurveyData.ipynb)
+## [Survey Results Analysis](./SurveyResultsCleanupAndPlot.ipynb)
