@@ -1,7 +1,9 @@
 # Tracking Hackathon Code Usage
 Replication Package for "The Secret Life of Hackathon Code Where does it come from and where does it go?"
 
-# Data Processing Steps Listed below using [WoC](https://github.com/woc-hack/tutorial):
+Only the scripts are available in the replication package. The underlying dataset used in the study is the [World of Code](https://worldofcode.org/) (WoC) dataset, and it is too large to share here. Please check the [WoC Tutorial](https://github.com/woc-hack/tutorial) for details of how to access and use the dataset. 
+
+## Data Processing Steps Listed below using WoC:
 
 Command for getting required data from WoC
 
